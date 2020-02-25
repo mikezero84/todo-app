@@ -1,0 +1,19 @@
+@import "~style/variables";
+
+.loading-container {
+
+    height: 100%;
+    width: 100%;
+    background: $white-transparent;
+    position: absolute;
+    z-index: 99;
+
+    img {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}

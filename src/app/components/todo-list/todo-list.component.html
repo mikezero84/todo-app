@@ -1,0 +1,13 @@
+<mat-list>
+    <mat-list-item *ngFor="let task of todoTasks">
+        <mat-icon mat-list-icon>access_time</mat-icon>
+        <h4 mat-line>{{ task.id }}</h4>
+        <p mat-line> {{ task.taskDescription }} </p>
+        <button mat-icon-button *ngIf="isUserAdmin" (click)="editTask(task.id)">
+            <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button (click)="deleteTask(task.id)">
+            <mat-icon>delete</mat-icon>
+        </button>
+    </mat-list-item>
+</mat-list>
